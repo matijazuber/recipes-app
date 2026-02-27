@@ -1,0 +1,59 @@
+body{
+  margin:0;
+  padding: 0;
+  font-family: Inter,sans-serif;
+  background-color: #fafaf8;
+}
+
+.divHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.paragraphHeader{
+  font-size: 32px;
+  line-height: 60px;
+  letter-spacing: -1.6px;
+  margin-left: 11px;
+  font-weight: 400;
+}
+
+.chefIcon{
+  width: 50px;
+}
+
+/*  Main  */
+
+.divInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 12px;
+  height: 38px;
+}
+
+.input{
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 1px;
+  padding: 9px 13px 9px 13px;
+  width: 400px;
+  height: auto;
+  border-color: #D1D5DB;
+}
+
+.buttonInput{
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 200px;
+  background-color: black;
+  color: white;
+
+}
