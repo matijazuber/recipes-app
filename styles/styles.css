@@ -31,7 +31,6 @@ body{
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  gap: 12px;
   height: 38px;
 }
 
@@ -55,5 +54,6 @@ body{
   max-width: 200px;
   background-color: black;
   color: white;
+  margin-left: 12px;
 
 }

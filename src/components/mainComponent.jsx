@@ -3,8 +3,10 @@ function Main() {
     <>
         <main>
         <div className="divInput">
-          <input placeholder="e.g oregano" className="input"></input>
-          <button className="buttonInput">+ Add ingredient</button>
+          <form>
+            <input placeholder="e.g oregano" className="input" name="ingredient"></input>
+            <button className="buttonInput">+ Add ingredient</button>
+            </form>
         </div>
       </main>
     </>
