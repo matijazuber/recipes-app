@@ -8,24 +8,16 @@ function Main() {
     <li key={ingredient}>{ ingredient}</li>
   ))
 
-  function handleSubmit(event) {
-
-
-        event.preventDefault()
-        const formData = new FormData(event.currentTarget)
-        const newIngredient = formData.get("ingredient")
-    
-            setIngredients((prevThings) => [
-            ...prevThings,newIngredient
-          ]);
-
+  function addIngredient(formData) {
+    const newIngredient = formData.get("ingredient")
+    setIngredients((prevThings) => [...prevThings,newIngredient]);
   }
 
   return (
     <>
         <main>
         <div className="divInput">
-          <form onSubmit={handleSubmit}>
+          <form action={addIngredient}>
             <input placeholder="e.g oregano" className="input" name="ingredient"></input>
             <button className="buttonInput">+ Add ingredient</button>
           </form>
