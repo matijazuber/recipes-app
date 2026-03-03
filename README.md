@@ -5,7 +5,7 @@ Instead of guessing what to cook, you can add items like chicken breasts, olive 
 
 
 
-![ReactWebsiteImage](../recipes-project/src/assets/Section-1.png)
+![ReactWebsiteImage](./src/assets/Section-1.png)
 
 Features:
 
