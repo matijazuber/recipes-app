@@ -1,4 +1,4 @@
-# Chef Cook With What You Have
+# Chef - Cook With What You Have
 
 Chef is a React app that helps you generate recipes based on the ingredients you already have at home. 
 
