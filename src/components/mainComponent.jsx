@@ -16,18 +16,33 @@ function Main() {
   return (
     <>
         <main>
-        <div className="divInput">
-          <form action={addIngredient}>
-            <input placeholder="e.g oregano" className="input" name="ingredient"></input>
-            <button className="buttonInput">+ Add ingredient</button>
-          </form>
-          
-        </div>
-        
-        <ul>
-          {ingredientsListItems}
-          </ul>
-      </main>
+  <div className="divInput">
+    <form action={addIngredient}>
+      <input
+        placeholder="e.g oregano"
+        className="input"
+        name="ingredient"
+      />
+      <button className="buttonInput">+ Add ingredient</button>
+    </form>
+  </div>
+
+  <section>
+    <h2>Ingredients on hand:</h2>
+    <ul className="ingredients-list">
+      {ingredientsListItems}
+    </ul>
+
+    <div className="get-recipe-container">
+      <div>
+        <h3>Ready for a recipe?</h3>
+        <p>Generate a recipe from your list of ingredients.</p>
+      </div>
+      <button>Get a recipe</button>
+    </div>
+  </section>
+</main>
+
     </>
   )
 }
