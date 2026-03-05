@@ -4,11 +4,7 @@ import IngredientsList from './ingredients';
 
 function Main() {
 
-  const [ingredients,setIngredients] = React.useState(['a','a','a','a'])
-  
-  const ingredientsListItems = ingredients.map(ingredient => (
-    <li key={ingredient}>{ ingredient}</li>
-  ))
+  const [ingredients,setIngredients] = React.useState(["all the main spices", "pasta", "ground beef", "tomato paste"])
 
   function addIngredient(formData) {
     const newIngredient = formData.get("ingredient")
@@ -36,7 +32,7 @@ function Main() {
         </div>
         {ingredients.length > 0 &&
           
-          <IngredientsList listIngredients={ingredientsListItems} recipeShow = {toggleRecipeShown} ingredientsListOF = {ingredients} />
+          <IngredientsList recipeShow = {toggleRecipeShown} items = {ingredients} />
         }
           
         {recipeShown && <Recipe></Recipe>}
