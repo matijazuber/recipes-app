@@ -6,7 +6,7 @@ function Header() {
       <header>
         <div className="divHeader">
           <img className="chefIcon" src={icon} alt="Chef Icon"></img>
-          <p className="paragraphHeader">Chef</p>
+          <p className="paragraphHeader">BiteWise </p>
           </div>
       </header>
     </>
