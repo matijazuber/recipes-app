@@ -1,6 +1,6 @@
 import React from 'react';
 import Recipe from "./biteRecipe"
-import Ingredients from './ingredients';
+import IngredientsList from './ingredients';
 
 function Main() {
 
@@ -17,6 +17,9 @@ function Main() {
 
   const [recipeShown, setRecipeShown] = React.useState(false)
   
+  function toggleRecipeShown() {
+        setRecipeShown(prevShown => !prevShown)
+    }
 
   return (
     <>
@@ -32,18 +35,10 @@ function Main() {
     </form>
         </div>
         {ingredients.length > 0 &&
-          <section>
-          <Ingredients listIngredients = {ingredientsListItems}></Ingredients>
-
-            {ingredients.length > 3 && <div className="get-recipe-container">
-              <div>
-                <h3>Ready for a recipe?</h3>
-                <p>Generate a recipe from your list of ingredients.</p>
-              </div>
-              <button onClick={()=>setRecipeShown((prevRecipe)=> !prevRecipe)}>Get a recipe</button>
-            </div>}
-          </section>
+          
+          <IngredientsList listIngredients={ingredientsListItems} recipeShow = {toggleRecipeShown} ingredientsListOF = {ingredients} />
         }
+          
         {recipeShown && <Recipe></Recipe>}
 </main>
 
