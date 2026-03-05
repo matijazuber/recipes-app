@@ -1,5 +1,6 @@
 import React from 'react';
-import Recipe from "./biteRecipeComponent"
+import Recipe from "./biteRecipe"
+import Ingredients from './ingredients';
 
 function Main() {
 
@@ -32,10 +33,7 @@ function Main() {
         </div>
         {ingredients.length > 0 &&
           <section>
-            <h2>Ingredients on hand:</h2>
-            <ul className="ingredients-list">
-              {ingredientsListItems}
-            </ul>
+          <Ingredients listIngredients = {ingredientsListItems}></Ingredients>
 
             {ingredients.length > 3 && <div className="get-recipe-container">
               <div>
